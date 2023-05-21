@@ -21,6 +21,10 @@ button:hover{
     text-align: center;
     letter-spacing: 0.03em;
 }
+#white{
+    padding-left: 215px;
+    padding-right: 215px;
+}
 #team h2{
     font-size: 36px;
     line-height: 117%;
@@ -28,9 +32,11 @@ button:hover{
     letter-spacing: 0.03em;
 }
 .container{
+    width:1200px;
+    /*
     width: 1600px;
     padding-right: 215px;
-    padding-left: 215px;
+    padding-left: 215px;*/
 }
 .blue-text,
 address p:hover,
@@ -51,16 +57,27 @@ a:focus,
 /*header*/
 header{
     border-bottom: 1px solid #ECECEC;
+    padding:0 215px;
 }
 header .container{
     display:flex;
     flex-direction: row;
-    justify-content: space-around;
-}
-header .contact-top{
-    width:300px;
-    display: flex;
     justify-content: space-between;
+    align-items: center;
+}
+header .header-left{
+    display: flex;
+    flex-direction: row;
+}
+header ul.contact-top{
+    margin:0;
+    padding-left: 0px;
+}
+header ul.contact-top li:first-child{
+    padding-right: 60px;
+}
+header .logo{
+    padding-right: 100px;
 }
 .logo {
     font-family: 'Raleway';
@@ -74,15 +91,16 @@ nav {
     font-size: 14px;
     line-height: 115%;
     letter-spacing: 0.02em;
-    width: 600px;
     display: flex;
     align-items: center;
     flex-direction: row;
     align-items: space-between;
 }
 nav a{
-    padding-left: 15px;
-    padding-right: 15px;
+    padding-left: 40px;
+}
+nav a:first-child{
+    padding-left: 0;
 }
 .contact-top{
     display: flex;
@@ -99,6 +117,7 @@ nav a{
 /*footer*/
 footer {
     background-color: #2F303A;
+    padding:0 215px;
 }
 
 address p {
@@ -144,14 +163,13 @@ a{
     background-color: #2F303A;
     display: flex;
     justify-content: center;
-    align-items: center;
-    padding:200px 425px;
+    padding: 200px 0px;
 }
 #order ul{
-    
     display: flex;
     flex-direction: column;
-    align-content: flex-end;
+    justify-content: center;
+    align-items: center;
 }
 #order h1 {
     text-align: center;
@@ -172,8 +190,11 @@ a{
     text-align: center;
     padding: 10px 41px;
     letter-spacing: 0.06em;
-    margin-left:200px;
 }
+#order .container ul{
+    padding-left: 0;
+}
+
 
 /*opisy lorem w index.html*/
 .lorem-index{
@@ -214,6 +235,8 @@ ul.lorem-index{
     line-height: 119%;
     letter-spacing: 0.03em;
     padding-top: 70px;
+    padding-left: 215px;
+    padding-right: 215px;
 }
 #team ul{
     display: flex;
