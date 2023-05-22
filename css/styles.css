@@ -4,10 +4,12 @@ body{
     font-family: 'Roboto';
     display:flex;
     flex-direction: column;
-    align-items: center;
 }
 ul{
     list-style-type: none;
+}
+.allwidth{
+    width:100%;
 }
 button{
     border: none;
@@ -49,7 +51,7 @@ a:focus,
 /*header*/
 header{
     border-bottom: 1px solid #ECECEC;
-    width: 1600px;
+    width: 100%;
     display: flex;
     justify-content: center;
 }
@@ -111,7 +113,7 @@ nav a:first-child{
 /*footer*/
 footer {
     background-color: #2F303A;
-    width: 1600px;
+    width: 100%;
     display: flex;
     justify-content: space-around;
 }
@@ -194,20 +196,16 @@ a{
 
 /*opisy lorem w index.html*/
 #white {
-    width: 1600px;
     margin: 0;
-    padding-left: 200px;
-    padding-right: 200px;
-}
-#white .container{
     display: flex;
+    flex-direction: column;
     justify-content: center;
+    align-items: center;
 }
 .lorem-index{
     font-size: 14px;
     letter-spacing: 0.03em;
-    display: flex;
-    justify-content: center;
+   display: flex;
 }
 .lorem-index p{
     line-height: 171%;
@@ -222,13 +220,9 @@ ul.lorem-index{
     padding: 0 7px;
 }
 /*czym się zajmujemy*/
-.what-we-do{
-    display: flex;
-    flex-direction: column;
-}
+
 .what-we-do ul{
     display:flex;
-    flex-direction: row;
     justify-content: center;
     padding-left:0px;
 }
@@ -246,9 +240,8 @@ ul.lorem-index{
     line-height: 119%;
     letter-spacing: 0.03em;
     padding-top: 70px;
-    width:1600px;
-    padding-left: 200px;
-    padding-right: 200px;
+    display: flex;
+    justify-content: center;
 }
 
 #team ul{
@@ -292,7 +285,6 @@ ul.lorem-index{
     display: flex;
     align-items: row;
     justify-content: center;
-    
 }
 
 .filter-buttons button{
@@ -312,10 +304,19 @@ ul.lorem-index{
 }
 
 /*obrazy z podpisami w portfolio.html*/
+.main-portfolio{
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.main-portfolio ul{
+    padding-left: 0;
+}
 .projects{
     display: flex;
     flex-flow: row wrap;
-    justify-content: space-around;   
 }
 .projects li{
     width: 370px;
